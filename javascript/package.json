@@ -1,0 +1,20 @@
+{
+  "name": "chinese-calendar-core",
+  "version": "0.1.0",
+  "description": "Chinese lunar dates and Four Pillars in fixed UTC+08:00",
+  "license": "MIT",
+  "main": "./src/index.cjs",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./src/index.mjs",
+      "require": "./src/index.cjs"
+    }
+  },
+  "bin": { "chinese-calendar": "./bin/calendar.cjs" },
+  "files": ["src", "types", "bin", "README.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "scripts": { "test": "node --test test/calendar.test.cjs" },
+  "keywords": ["calendar", "lunar", "solar-terms", "four-pillars"]
+}

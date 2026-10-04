@@ -1,0 +1,35 @@
+# Generated outputs
+.build/
+build/
+dist/
+target/
+node_modules/
+*.egg-info/
+__pycache__/
+*.py[cod]
+*.class
+*.jar
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+*.exe
+*.tgz
+.pytest_cache/
+.venv/
+venv/
+
+# Editor / operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+
+# Local configuration
+.env
+.env.*
+!.env.example

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chinese-calendar-core"
+version = "0.1.0"
+description = "Chinese lunar dates and Four Pillars in fixed UTC+08:00"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["calendar", "lunar", "solar-terms", "four-pillars"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
+
+[project.scripts]
+chinese-calendar = "chinese_calendar_core.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+chinese_calendar_core = ["py.typed"]
